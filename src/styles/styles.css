@@ -1,0 +1,27 @@
+@import url(./global.css);
+
+body{
+    background-color: var(--background-main);
+}
+
+h1{
+    color: #fff;
+    font-family: var(--font-family-h1);
+}
+
+a, p{
+    font-family: var(--font-family-p-bold);
+    color:  var(--text-title);
+}
+.info > p {
+    color: #fff;
+}
+
+button{
+    color: var(--text-title);
+    font-family: var(--font-family-p-bold);
+}
+
+footer{
+    background-color: var(--background-footer);
+}

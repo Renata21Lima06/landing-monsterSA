@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../assets/icons/icon-monstersSA.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <title>Cadastro</title>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+    <header class="mx-20 flex justify-between items-center h-21">
+        <nav class="flex gap-14 items-center">
+            <a class="text-base" href="../../index.html">Home</a>
+            <a class="text-base" href="./sobre.html">Sobre a Empresa</a>
+        </nav>
+    </header>
+    <main class="mx-20 flex justify-between items-center py-10 gap-8">
+        <div class="info w-2/3 flex flex-col items-start">
+            <div>
+                <h1 class="text-4xl">Monstros SA uma empresa de qualidade.</h1>
+                <p class="text-2xl">Preenche o formulário e envie seus dados!</p>
+            </div>
+            <div>
+                <form class="flex flex-col gap-4  p-6 rounded-lg text-white">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" class="p-2 rounded-md bg-gray-200 text-black w-full">
+                
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" class="p-2 rounded-md bg-gray-200 text-black w-full">
+                
+                    <div class="flex gap-4">
+                        <div class="flex flex-col w-1/2">
+                            <label for="login">Login:</label>
+                            <input type="text" id="login" name="login" class="p-2 rounded-md bg-gray-200 text-black">
+                        </div>
+                        <div class="flex flex-col w-1/2">
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="senha" class="p-2 rounded-md bg-gray-200 text-black">
+                        </div>
+                    </div>
+                
+                    <div class="flex justify-between mt-4">
+                        <button type="submit" class="flex items-center gap-2 border-solid border-gray-200 border-1 px-4 py-2 rounded-md text-white">
+                            <img src="../assets/img/pngegg 2.png" alt="Ícone enviar" class="w-6">
+                            Enviar
+                        </button>
+                        <button type="button" class="flex items-center gap-2 px-4 py-2 border-solid border-gray-200 border-1 rounded-md text-white">
+                            <img src="../assets/img/icons8-monstros-inc-mike-48 2.png" alt="Ícone já cadastrado" class="w-6">
+                            Já cadastrado
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6">
+            <img src="../assets/img/equipe 1.png" class="rounded-lg shadow-lg" width="600px" alt="Monstros SA">
+            <img src="../assets/img/Monsters-Inc.-Logo 1.png" class="w-2/3" alt="Monsters Inc">
+        </div>
+    </main>
+
+    <footer class="relative bg-gray-800 h-20 flex items-center">
+        <div class="info mx-20 relative z-10 flex justify-between items-center w-full">
+            <div class=" info flex items-center gap-6">
+                <img src="../assets/img/porta2 1.png" class="absolute -bottom-5 left-2 w-20" alt="Porta">
+                <p class="px-40 text-2xl">Desenvolvido por Monstros SA.</p>
+            </div>
+            <div class="info">
+                <p>By Bruno Z.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/cadastro.js"></script>
+</body>
+</html>

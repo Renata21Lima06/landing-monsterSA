@@ -1,0 +1,12 @@
+@import url(./fonts.css);
+
+:root {
+    --background-main: #13075E;
+    --background-footer: #22D4FD;
+
+    --text-title: #22D4FD;
+    
+    --font-family-h1: "Krona One", sans-serif;
+    --font-family-p: "Montserrat", sans-serif;
+    --font-family-p-bold: "Montserrat Bold", sans-serif;
+}

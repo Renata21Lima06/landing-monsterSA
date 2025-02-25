@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/assets/icons/icon-monstersSA.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/styles/fonts.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #09004A;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            display: none;
+            width: 350px;
+            text-align: center;
+            border: 3px solid #00CFFF;
+        }
+        .modal input {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: #D9D9D9;
+        }
+        .modal button {
+            width: 45%;
+            padding: 8px;
+            margin-top: 10px;
+            background: transparent;
+            border: 2px solid #00CFFF;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .modal button:hover {
+            background: #00CFFF;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+
+    <title>Home</title>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+    <header class="mx-20 flex justify-between items-center h-21">
+        <nav class="flex gap-14 items-center">
+            <a class="text-base" href="index.html">Home</a>
+            <a class="text-base" href="./src/pages/sobre.html">Sobre a Empresa</a>
+        </nav>
+        <div class="login-cadastro flex gap-4 justify-center items-center ">
+            <button class="text-base cursor-pointer" type="button"> <a href="./src/pages/cadastro.html">Cadastro</a></button>
+            <p class="text-base">|</p>
+            <button id="loginBtn" class="text-base flex cursor-pointer gap-3 justify-center items-center" type="button"> Login <img src="./src/assets/img/portaroxa 1.png" width="30px" height="auto" alt="Porta Roxa"></button>
+        </div>
+    </header>
+    <div id="loginModal" class="modal">
+        <span class="close-btn" onclick="fecharModal()">×</span>
+        <h2 class="text-lg font-bold text-[#00CFFF]">Login:</h2>
+        <input id="modalLogin" type="text" placeholder="Digite seu login">
+        <h2 class="text-lg font-bold text-[#00CFFF]">Senha:</h2>
+        <input id="modalSenha" type="password" placeholder="Digite sua senha">
+        <div class="flex justify-between gap-2">
+            <button id="btnLogin">Entrar</button>
+            <button>Recuperar senha</button>
+        </div>
+    </div>
+
+    <main class="flex justify-between mx-20 py-20 gap-3">
+        <div class="cta flex flex-col gap-6 items-center justify-center">
+            <img src="./src/assets/img/Monsters-Inc.-Logo 1.png" width="501px" height="auto"  alt="Monsters-INC Logo">
+            <h1 class="text-4xl">Venha fazer parte deste time!</h1>
+        </div>
+        <img  src="./src/assets/img/pngwing.com 1.png" width="650px" height="auto" alt="Monstros SA">
+    </main>
+    <footer class="relative bg-gray-800 h-20 flex items-center">
+        <div class="info mx-20 relative z-10 flex justify-between items-center w-full">
+            <div class=" info flex items-center gap-6">
+                <img src="./src/assets/img/porta2 1.png" class="absolute -bottom-5 left-2 w-20" alt="Porta">
+                <p class="px-40 text-2xl">Desenvolvido por Monstros SA.</p>
+            </div>
+            <div class="info">
+                <p>By Bruno Z.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/script/app.js"></script>
+</body>
+</html>
