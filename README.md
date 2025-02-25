@@ -4,6 +4,8 @@ Este projeto foi desenvolvido como parte da atividade da disciplina **Desenvolvi
 
 [Design Figma - Monstros SA](https://www.figma.com/design/gydk6VOlemCm8lVP9nyRXv/Monstros-SA?node-id=0-1&p=f&t=8qooOKnDLheD9Mu3-0)
 
+acesse: https://renata21lima06.github.io/landing-monsterSA/
+
 ### Tecnologias Utilizadas:
 - **HTML**: Estruturação da página.
 - **CSS**: Estilização da página.
